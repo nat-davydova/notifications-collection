@@ -46,6 +46,11 @@ body a {
   font-weight: 500;
 }
 
+.header__subtitle {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
 .content {
   width: 700px;
   max-width: 95%;
@@ -71,8 +76,11 @@ body a {
 
 .notification {
   font-family: "Open Sans", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   box-sizing: border-box;
+}
+
+.notification--elevation {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
 }
 
 .notification__btn {
@@ -84,6 +92,21 @@ body a {
 
 .notification__btn--close {
   text-indent: -99999px;
+}
+
+.notification__title {
+  margin-top: 0;
+}
+
+.notification__content p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+.notification__content p:last-child {
+  margin-bottom: 0;
+}
+.notification__content a {
+  text-decoration: underline;
 }
 
 .notification1 {
@@ -126,7 +149,6 @@ body a {
 }
 
 .notification1__title {
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -142,16 +164,8 @@ body a {
   color: #8d0101;
 }
 
-.notification1__content p {
-  margin-top: 0;
-  line-height: 1.5;
-}
-.notification1__content p:last-child {
-  margin-bottom: 0;
-}
 .notification1__content a {
   color: #75698c;
-  text-decoration: underline;
 }
 
 .notification1__close {
@@ -159,4 +173,13 @@ body a {
   height: 15px;
   flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
+}
+
+.notification2 {
+  display: flex;
+  gap: 20px;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid;
 }
