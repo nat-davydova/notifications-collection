@@ -69,6 +69,11 @@ body a {
   margin-bottom: 0;
 }
 
+.notification {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  box-sizing: border-box;
+}
+
 .notification__btn {
   border: none;
   background-image: none;
@@ -80,16 +85,36 @@ body a {
   text-indent: -99999px;
 }
 
+.notification1 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
 .notification1:before {
   display: inline-flex;
+  flex-basis: 40px;
   width: 40px;
   height: 40px;
   content: "";
 }
 
+.notification1__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.notification1__content p {
+  margin-top: 0;
+}
+.notification1__content p:last-child {
+  margin-bottom: 0;
+}
+
 .notification1__close {
-  width: 20px;
-  height: 20px;
+  flex-basis: 15px;
+  width: 15px;
+  height: 15px;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
 

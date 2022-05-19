@@ -132,9 +132,15 @@ $_orange_90: #d26a0f;
 
 // palette additional
 
-$_violet_30: #c6c4d4;
+$_violet_10: #f4f3f6;
 
 // COMMON NOTIFICATION STYLES
+.notification {
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+  box-sizing: border-box;
+}
+
 .notification__btn {
   border: none;
   background-image: none;
@@ -149,17 +155,39 @@ $_violet_30: #c6c4d4;
 // NOTIFICATIONS #1
 
 .notification1 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+
   &:before {
     display: inline-flex;
+    flex-basis: 40px;
     width: 40px;
     height: 40px;
     content: "";
   }
 }
 
+.notification1__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.notification1__content {
+  p {
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .notification1__close {
-  width: 20px;
-  height: 20px;
+  flex-basis: 15px;
+  width: 15px;
+  height: 15px;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
 
