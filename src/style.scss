@@ -130,12 +130,17 @@ $_orange_50: #f18c33;
 $_orange_70: #ef7e1a;
 $_orange_90: #d26a0f;
 
-// palette additional
+// palette violet
 
 $_violet_10: #f4f3f6;
+$_violet_30: #d4d0dc;
+$_violet_50: #b4aec2;
+$_violet_70: #948ba7;
+$_violet_90: #75698c;
 
 // COMMON NOTIFICATION STYLES
 .notification {
+  font-family: "Open Sans", sans-serif;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
   box-sizing: border-box;
@@ -172,15 +177,22 @@ $_violet_10: #f4f3f6;
 .notification1__title {
   margin-top: 0;
   margin-bottom: 10px;
+  color: $_green_70;
 }
 
 .notification1__content {
   p {
     margin-top: 0;
+    line-height: 1.5;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  a {
+    color: $_violet_90;
+    text-decoration: underline;
   }
 }
 
