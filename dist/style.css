@@ -100,10 +100,25 @@ body a {
   content: "";
 }
 
+.notification1--success:before {
+  background: url("https://assets.codepen.io/3341051/check.svg") 0 0 no-repeat;
+}
+
+.notification1--warning:before {
+  background: url("https://assets.codepen.io/3341051/warning.svg") 0 0 no-repeat;
+}
+
 .notification1__title {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.notification1__title--success {
   color: #007a6c;
+}
+
+.notification1__title--warning {
+  color: #d26a0f;
 }
 
 .notification1__content p {
@@ -123,8 +138,4 @@ body a {
   width: 15px;
   height: 15px;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
-}
-
-.notification1--success:before {
-  background: url("https://assets.codepen.io/3341051/check.svg") 0 0 no-repeat;
 }
