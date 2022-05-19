@@ -108,17 +108,25 @@ body a {
   background: url("https://assets.codepen.io/3341051/warning.svg") 0 0 no-repeat;
 }
 
+.notification1--danger:before {
+  background: url("https://assets.codepen.io/3341051/danger.svg") 0 0 no-repeat;
+}
+
 .notification1__title {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
 .notification1__title--success {
-  color: #007a6c;
+  color: #005248;
 }
 
 .notification1__title--warning {
   color: #d26a0f;
+}
+
+.notification1__title--danger {
+  color: #8d0101;
 }
 
 .notification1__content p {
