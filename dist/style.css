@@ -68,3 +68,31 @@ body a {
 .effect__cell:last-child {
   margin-bottom: 0;
 }
+
+.notification__btn {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.notification__btn--close {
+  text-indent: -99999px;
+}
+
+.notification1:before {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  content: "";
+}
+
+.notification1__close {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://assets.codepen.io/3341051/cancel.svg");
+}
+
+.notification1--success:before {
+  background: url("https://assets.codepen.io/3341051/check.svg") 0 0 no-repeat;
+}
