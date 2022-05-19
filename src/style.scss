@@ -138,6 +138,10 @@ $_violet_50: #b4aec2;
 $_violet_70: #948ba7;
 $_violet_90: #75698c;
 
+// MEDIA
+
+$_mobile-width: 500px;
+
 // COMMON NOTIFICATION STYLES
 .notification {
   font-family: "Open Sans", sans-serif;
@@ -162,15 +166,21 @@ $_violet_90: #75698c;
 .notification1 {
   display: flex;
   gap: 20px;
+  max-width: 700px;
   padding: 20px;
   border-radius: 5px;
 
   &:before {
     display: inline-flex;
-    flex-basis: 40px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
     content: "";
+
+    @media (min-width: $_mobile-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -191,6 +201,12 @@ $_violet_90: #75698c;
   &:before {
     background: url("https://assets.codepen.io/3341051/danger.svg") 0 0
       no-repeat;
+  }
+}
+
+.notification1__content {
+  @media (min-width: $_mobile-width) {
+    margin-right: 30px;
   }
 }
 
@@ -228,8 +244,8 @@ $_violet_90: #75698c;
 }
 
 .notification1__close {
-  flex-basis: 15px;
   width: 15px;
   height: 15px;
+  flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
