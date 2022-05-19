@@ -8,27 +8,6 @@ body a {
   text-decoration: none;
 }
 
-.btn {
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
-  padding: 10px 20px;
-  margin-right: 10px;
-  background-color: #fff;
-  border: 1px solid #2c2c2c;
-  border-radius: 3px;
-  cursor: pointer;
-  outline: none;
-}
-.btn:last-child {
-  margin-right: 0;
-}
-.btn:hover, .btn.js-active {
-  color: #fff;
-  background-color: #2c2c2c;
-}
-
 .header {
   max-width: 500px;
   margin: 50px auto;
@@ -41,12 +20,51 @@ body a {
   gap: 15px;
 }
 
+.header__btn {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #2c2c2c;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+.header__btn:last-child {
+  margin-right: 0;
+}
+.header__btn:hover, .header__btn.js-active {
+  color: #fff;
+  background-color: #2c2c2c;
+}
+
 .header__title {
   margin-bottom: 10px;
   font-weight: 500;
 }
 
-.header__subtitle {
-  margin-bottom: 30px;
-  font-size: 20px;
+.content {
+  width: 700px;
+  max-width: 95%;
+  margin: auto;
+}
+
+.effect {
+  margin-bottom: 50px;
+}
+
+.effect__title {
+  text-align: center;
+}
+
+.effect__cell {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.effect__cell:last-child {
+  margin-bottom: 0;
 }
