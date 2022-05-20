@@ -319,3 +319,10 @@ body a {
   background-size: 50%;
   background-image: url(https://assets.codepen.io/3341051/danger3.svg);
 }
+
+.notification3__close {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
+}
