@@ -152,12 +152,6 @@ body a {
   background-image: url("https://assets.codepen.io/3341051/danger.svg");
 }
 
-@media (min-width: 500px) {
-  .notification1__content {
-    margin-right: 30px;
-  }
-}
-
 .notification1__title--success {
   color: #005200;
 }
@@ -170,6 +164,11 @@ body a {
   color: #8d0101;
 }
 
+@media (min-width: 500px) {
+  .notification1__content {
+    margin-right: 30px;
+  }
+}
 .notification1__content a {
   color: #75698c;
 }
@@ -229,4 +228,17 @@ body a {
   background-size: 55%;
   background-image: url(https://assets.codepen.io/3341051/danger2.svg);
   border-color: #fd0d0d;
+}
+
+.notification2__close {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
+}
+
+@media (min-width: 500px) {
+  .notification2__content {
+    margin-right: 30px;
+  }
 }

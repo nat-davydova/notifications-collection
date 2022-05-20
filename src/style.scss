@@ -241,13 +241,6 @@ $_mobile-width: 500px;
     background-image: url("https://assets.codepen.io/3341051/danger.svg");
   }
 }
-
-.notification1__content {
-  @media (min-width: $_mobile-width) {
-    margin-right: 30px;
-  }
-}
-
 .notification1__title--success {
   color: $_green_90;
 }
@@ -261,6 +254,10 @@ $_mobile-width: 500px;
 }
 
 .notification1__content {
+  @media (min-width: $_mobile-width) {
+    margin-right: 30px;
+  }
+
   a {
     color: $_violet_90;
   }
@@ -326,5 +323,18 @@ $_mobile-width: 500px;
     background-size: 55%;
     background-image: url(https://assets.codepen.io/3341051/danger2.svg);
     border-color: $_red_50;
+  }
+}
+
+.notification2__close {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
+}
+
+.notification2__content {
+  @media (min-width: $_mobile-width) {
+    margin-right: 30px;
   }
 }
