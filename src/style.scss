@@ -151,6 +151,10 @@ $_mobile-width: 500px;
 
 // COMMON NOTIFICATION STYLES
 .notification {
+  display: flex;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 
@@ -203,11 +207,7 @@ $_mobile-width: 500px;
 // NOTIFICATIONS #1
 
 .notification1 {
-  display: flex;
   gap: 20px;
-  max-width: 700px;
-  padding: 20px;
-  border-radius: 5px;
 
   &:before {
     display: inline-flex;
@@ -273,12 +273,8 @@ $_mobile-width: 500px;
 // NOTIFICATIONS #2
 
 .notification2 {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 700px;
-  padding: 20px;
-  border-radius: 5px;
   border: 2px solid;
 
   @media (min-width: $_mobile-width) {
@@ -361,4 +357,41 @@ $_mobile-width: 500px;
     margin-right: 30px;
     text-align: left;
   }
+}
+
+// NOTIFICATIONS #3
+.notification3 {
+  flex-wrap: wrap;
+  justify-content: center;
+  border-left: 7px solid;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  @media (min-width: $_mobile-width) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  &:before {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    content: "";
+  }
+}
+
+.notification3--success {
+  background-color: $_green_10;
+  border-color: $_green_50;
+}
+
+.notification3--warning {
+  background-color: $_orange_10;
+  border-color: $_orange_50;
+}
+
+.notification3--danger {
+  background-color: $_red_10;
+  border-color: $_red_50;
 }
