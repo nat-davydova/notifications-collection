@@ -153,7 +153,7 @@ body a {
 }
 
 .notification1__title--success {
-  color: #005248;
+  color: #005200;
 }
 
 .notification1__title--warning {
@@ -182,4 +182,19 @@ body a {
   padding: 20px;
   border-radius: 5px;
   border: 2px solid;
+}
+
+.notification2--success {
+  background-color: #d6ffd6;
+  border-color: #008e00;
+}
+
+.notification2--warning {
+  background-color: #fcdfc5;
+  border-color: #f18c33;
+}
+
+.notification2--danger {
+  background-color: #ffd6d6;
+  border-color: #fd0d0d;
 }
