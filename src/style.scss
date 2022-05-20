@@ -181,6 +181,10 @@ $_mobile-width: 500px;
 }
 
 .notification__btn--close {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+
   text-indent: -99999px;
 }
 
@@ -264,9 +268,6 @@ $_mobile-width: 500px;
 }
 
 .notification1__close {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
 
@@ -342,9 +343,6 @@ $_mobile-width: 500px;
 }
 
 .notification2__close {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
 }
 
@@ -374,7 +372,7 @@ $_mobile-width: 500px;
     gap: 20px;
     border-top: 0;
     border-left: 7px solid;
-    border-top-right-radius:5px;
+    border-top-right-radius: 5px;
     border-bottom-left-radius: 0;
   }
 
@@ -447,8 +445,68 @@ $_mobile-width: 500px;
 }
 
 .notification3__close {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
+}
+
+// NOTIFICATIONS #4
+.notification4 {
+  padding: 0 20px 0 0;
+  gap: 20px;
+
+  &:before {
+    width: 80px;
+    height: 100%;
+    flex-shrink: 0;
+    content: "";
+    background-position: 50%;
+  }
+}
+
+.notification4--success {
+  &:before {
+    background-color: $_green_50;
+    background-size: 40px auto;
+    background-image: url(https://assets.codepen.io/3341051/check3.svg);
+  }
+  
+    a {
+    color: $_green-70;
+  }
+}
+
+.notification4--warning {
+  &:before {
+    background-color: $_orange_50;
+    background-size: 40px auto;
+    background-image: url(https://assets.codepen.io/3341051/warning3.svg);
+  }
+  
+   a {
+    color: $_orange-90;
+  }
+}
+
+.notification4--danger {
+  &:before {
+    background-color: $_red_50;
+    background-size: 35px auto;
+    background-image: url(https://assets.codepen.io/3341051/danger3.svg);
+  }
+  
+   a {
+    color: $_red-70;
+  }
+}
+
+.notification4__content {
+  padding: 20px 0;
+  margin-right: 30px;
+}
+
+.notification4__btn-bar {
+  padding: 20px 0;
+}
+
+.notification4__close {
+  background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
