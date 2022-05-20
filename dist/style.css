@@ -325,6 +325,18 @@ body a {
   background-image: url(https://assets.codepen.io/3341051/danger3.svg);
 }
 
+.notification3__content {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .notification3__content {
+    margin-top: 0;
+    margin-right: 30px;
+    text-align: left;
+  }
+}
+
 .notification3__btn-bar {
   display: inline-flex;
   order: -1;

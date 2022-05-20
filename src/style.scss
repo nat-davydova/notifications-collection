@@ -423,6 +423,17 @@ $_mobile-width: 500px;
   }
 }
 
+.notification3__content {
+  margin-top: 20px;
+  text-align: center;
+
+  @media (min-width: $_mobile-width) {
+    margin-top: 0;
+    margin-right: 30px;
+    text-align: left;
+  }
+}
+
 .notification3__btn-bar {
   display: inline-flex;
   order: -1;
