@@ -452,7 +452,6 @@ $_mobile-width: 500px;
 .notification4 {
   position: relative;
   padding: 0 20px 0 0;
-  gap: 20px;
   flex-wrap: wrap;
 
   @media (min-width: $_mobile-width) {

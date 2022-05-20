@@ -354,7 +354,6 @@ body a {
 .notification4 {
   position: relative;
   padding: 0 20px 0 0;
-  gap: 20px;
   flex-wrap: wrap;
 }
 @media (min-width: 500px) {
