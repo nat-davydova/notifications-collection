@@ -281,23 +281,41 @@ body a {
   }
 }
 .notification3:before {
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
+  align-self: center;
   flex-shrink: 0;
   content: "";
+  border-radius: 50%;
+  background-position: 50%;
 }
 
 .notification3--success {
   background-color: #d6ffd6;
   border-color: #008e00;
 }
+.notification3--success:before {
+  background-color: #008e00;
+  background-size: 60%;
+  background-image: url(https://assets.codepen.io/3341051/check3.svg);
+}
 
 .notification3--warning {
   background-color: #fcdfc5;
   border-color: #f18c33;
 }
+.notification3--warning:before {
+  background-color: #f18c33;
+  background-size: 60%;
+  background-image: url(https://assets.codepen.io/3341051/warning3.svg);
+}
 
 .notification3--danger {
   background-color: #ffd6d6;
   border-color: #fd0d0d;
+}
+.notification3--danger:before {
+  background-color: #fd0d0d;
+  background-size: 50%;
+  background-image: url(https://assets.codepen.io/3341051/danger3.svg);
 }

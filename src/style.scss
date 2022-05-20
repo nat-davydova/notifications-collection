@@ -374,24 +374,46 @@ $_mobile-width: 500px;
   }
 
   &:before {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
+    align-self: center;
     flex-shrink: 0;
     content: "";
+    border-radius: 50%;
+
+    background-position: 50%;
   }
 }
 
 .notification3--success {
   background-color: $_green_10;
   border-color: $_green_50;
+
+  &:before {
+    background-color: $_green_50;
+    background-size: 60%;
+    background-image: url(https://assets.codepen.io/3341051/check3.svg);
+  }
 }
 
 .notification3--warning {
   background-color: $_orange_10;
   border-color: $_orange_50;
+
+  &:before {
+    background-color: $_orange_50;
+    background-size: 60%;
+    background-image: url(https://assets.codepen.io/3341051/warning3.svg);
+  }
 }
 
 .notification3--danger {
   background-color: $_red_10;
   border-color: $_red_50;
+
+  &:before {
+    background-color: $_red_50;
+    background-size: 50%;
+    background-image: url(https://assets.codepen.io/3341051/danger3.svg);
+  }
 }
