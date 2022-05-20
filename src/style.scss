@@ -274,11 +274,18 @@ $_mobile-width: 500px;
 
 .notification2 {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 700px;
   padding: 20px;
   border-radius: 5px;
   border: 2px solid;
+
+  @media (min-width: $_mobile-width) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
 
   &:before {
     display: inline-flex;
@@ -287,7 +294,6 @@ $_mobile-width: 500px;
     flex-shrink: 0;
     content: "";
     background-color: #fff;
-    background-size: 70%;
     background-position: 50%;
     border-radius: 50%;
     border: 10px solid;
@@ -310,6 +316,7 @@ $_mobile-width: 500px;
   border-color: $_orange_50;
 
   &:before {
+    background-size: 70%;
     background-image: url(https://assets.codepen.io/3341051/warning2.svg);
     border-color: $_orange_50;
   }
@@ -326,6 +333,18 @@ $_mobile-width: 500px;
   }
 }
 
+.notification2__btn-bar {
+  display: inline-flex;
+  order: -1;
+  width: 100%;
+  justify-content: flex-end;
+
+  @media (min-width: $_mobile-width) {
+    order: 0;
+    width: auto;
+  }
+}
+
 .notification2__close {
   width: 15px;
   height: 15px;
@@ -334,7 +353,12 @@ $_mobile-width: 500px;
 }
 
 .notification2__content {
+  margin-top: 20px;
+  text-align: center;
+
   @media (min-width: $_mobile-width) {
+    margin-top: 0;
     margin-right: 30px;
+    text-align: left;
   }
 }
