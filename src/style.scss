@@ -450,26 +450,44 @@ $_mobile-width: 500px;
 
 // NOTIFICATIONS #4
 .notification4 {
+  position: relative;
   padding: 0 20px 0 0;
   gap: 20px;
+  flex-wrap: wrap;
+
+  @media (min-width: $_mobile-width) {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
 
   &:before {
-    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
     height: 100%;
     flex-shrink: 0;
     content: "";
     background-position: 50%;
+
+    @media (min-width: $_mobile-width) {
+      width: 80px;
+    }
   }
 }
 
 .notification4--success {
   &:before {
     background-color: $_green_50;
-    background-size: 40px auto;
+    background-size: 35px auto;
     background-image: url(https://assets.codepen.io/3341051/check3.svg);
+
+    @media (min-width: $_mobile-width) {
+      background-size: 40px auto;
+    }
   }
-  
-    a {
+
+  a {
     color: $_green-70;
   }
 }
@@ -477,11 +495,15 @@ $_mobile-width: 500px;
 .notification4--warning {
   &:before {
     background-color: $_orange_50;
-    background-size: 40px auto;
+    background-size: 35px auto;
     background-image: url(https://assets.codepen.io/3341051/warning3.svg);
+
+    @media (min-width: $_mobile-width) {
+      background-size: 40px auto;
+    }
   }
-  
-   a {
+
+  a {
     color: $_orange-90;
   }
 }
@@ -489,22 +511,42 @@ $_mobile-width: 500px;
 .notification4--danger {
   &:before {
     background-color: $_red_50;
-    background-size: 35px auto;
+    background-size: 30px auto;
     background-image: url(https://assets.codepen.io/3341051/danger3.svg);
+
+    @media (min-width: $_mobile-width) {
+      background-size: 35px auto;
+    }
   }
-  
-   a {
+
+  a {
     color: $_red-70;
   }
 }
 
 .notification4__content {
   padding: 20px 0;
-  margin-right: 30px;
+
+  margin-left: 80px;
+
+  @media (min-width: $_mobile-width) {
+    margin-left: 100px;
+    margin-right: 30px;
+  }
 }
 
 .notification4__btn-bar {
-  padding: 20px 0;
+  display: inline-flex;
+  padding-top: 20px;
+  width: 100%;
+  // flex-shrink: 0;
+  order: -1;
+  justify-content: flex-end;
+
+  @media (min-width: $_mobile-width) {
+    width: auto;
+    order: 0;
+  }
 }
 
 .notification4__close {
