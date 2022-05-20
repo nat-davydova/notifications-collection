@@ -269,15 +269,20 @@ body a {
 .notification3 {
   flex-wrap: wrap;
   justify-content: center;
-  border-left: 7px solid;
+  border-top: 7px solid;
   border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
 }
 @media (min-width: 500px) {
   .notification3 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 20px;
+    border-top: 0;
+    border-left: 7px solid;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
   }
 }
 .notification3:before {
@@ -318,6 +323,19 @@ body a {
   background-color: #fd0d0d;
   background-size: 50%;
   background-image: url(https://assets.codepen.io/3341051/danger3.svg);
+}
+
+.notification3__btn-bar {
+  display: inline-flex;
+  order: -1;
+  width: 100%;
+  justify-content: flex-end;
+}
+@media (min-width: 500px) {
+  .notification3__btn-bar {
+    order: 0;
+    width: auto;
+  }
 }
 
 .notification3__close {

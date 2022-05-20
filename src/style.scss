@@ -363,14 +363,19 @@ $_mobile-width: 500px;
 .notification3 {
   flex-wrap: wrap;
   justify-content: center;
-  border-left: 7px solid;
+  border-top: 7px solid;
   border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
 
   @media (min-width: $_mobile-width) {
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 20px;
+    border-top: 0;
+    border-left: 7px solid;
+    border-top-right-radius:5px;
+    border-bottom-left-radius: 0;
   }
 
   &:before {
@@ -418,10 +423,21 @@ $_mobile-width: 500px;
   }
 }
 
+.notification3__btn-bar {
+  display: inline-flex;
+  order: -1;
+  width: 100%;
+  justify-content: flex-end;
+
+  @media (min-width: $_mobile-width) {
+    order: 0;
+    width: auto;
+  }
+}
+
 .notification3__close {
   width: 15px;
   height: 15px;
   flex-shrink: 0;
   background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
 }
-
