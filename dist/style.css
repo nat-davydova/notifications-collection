@@ -167,15 +167,15 @@ body a {
 }
 
 .notification1__title--success {
-  color: #006600;
+  color: #008e00;
 }
 
 .notification1__title--warning {
-  color: #ef7e1a;
+  color: #f18c33;
 }
 
 .notification1__title--danger {
-  color: #bb0202;
+  color: #fd0d0d;
 }
 
 @media (min-width: 500px) {
@@ -429,6 +429,18 @@ body a {
 }
 .notification4--danger a {
   color: #bb0202;
+}
+
+.notification4__title--success {
+  color: #008e00;
+}
+
+.notification4__title--warning {
+  color: #f18c33;
+}
+
+.notification4__title--danger {
+  color: #fd0d0d;
 }
 
 .notification4__content {

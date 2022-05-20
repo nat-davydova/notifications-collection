@@ -257,16 +257,17 @@ $_mobile-width: 500px;
     color: $_red-70;
   }
 }
+
 .notification1__title--success {
-  color: $_green_70;
+  color: $_green_50;
 }
 
 .notification1__title--warning {
-  color: $_orange_70;
+  color: $_orange_50;
 }
 
 .notification1__title--danger {
-  color: $_red_70;
+  color: $_red_50;
 }
 
 .notification1__content {
@@ -529,6 +530,18 @@ $_mobile-width: 500px;
   a {
     color: $_red-70;
   }
+}
+
+.notification4__title--success {
+  color: $_green_50;
+}
+
+.notification4__title--warning {
+  color: $_orange_50;
+}
+
+.notification4__title--danger {
+  color: $_red_50;
 }
 
 .notification4__content {
