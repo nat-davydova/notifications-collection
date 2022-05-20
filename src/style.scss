@@ -149,7 +149,7 @@ $_violet_90: #75698c;
 
 $_mobile-width: 500px;
 
-// COMMON NOTIFICATION STYLES
+/******* COMMON NOTIFICATION STYLES *******/
 .notification {
   display: flex;
   max-width: 700px;
@@ -208,7 +208,7 @@ $_mobile-width: 500px;
   }
 }
 
-// NOTIFICATIONS #1
+/******* NOTIFICATIONS #1 *******/
 
 .notification1 {
   gap: 20px;
@@ -232,11 +232,19 @@ $_mobile-width: 500px;
   &:before {
     background-image: url("https://assets.codepen.io/3341051/check.svg");
   }
+
+  a {
+    color: $_green-70;
+  }
 }
 
 .notification1--warning {
   &:before {
     background-image: url("https://assets.codepen.io/3341051/warning.svg");
+  }
+
+  a {
+    color: $_orange-90;
   }
 }
 
@@ -244,26 +252,26 @@ $_mobile-width: 500px;
   &:before {
     background-image: url("https://assets.codepen.io/3341051/danger.svg");
   }
+
+  a {
+    color: $_red-70;
+  }
 }
 .notification1__title--success {
-  color: $_green_90;
+  color: $_green_70;
 }
 
 .notification1__title--warning {
-  color: $_orange_90;
+  color: $_orange_70;
 }
 
 .notification1__title--danger {
-  color: $_red_90;
+  color: $_red_70;
 }
 
 .notification1__content {
   @media (min-width: $_mobile-width) {
     margin-right: 30px;
-  }
-
-  a {
-    color: $_violet_90;
   }
 }
 
@@ -271,7 +279,7 @@ $_mobile-width: 500px;
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
 
-// NOTIFICATIONS #2
+/******* NOTIFICATIONS #2 *******/
 
 .notification2 {
   flex-wrap: wrap;
@@ -357,7 +365,7 @@ $_mobile-width: 500px;
   }
 }
 
-// NOTIFICATIONS #3
+/******* NOTIFICATIONS #3 *******/
 .notification3 {
   flex-wrap: wrap;
   justify-content: center;
@@ -448,7 +456,7 @@ $_mobile-width: 500px;
   background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
 }
 
-// NOTIFICATIONS #4
+/******* NOTIFICATIONS #4 *******/
 .notification4 {
   position: relative;
   padding: 0 20px 0 0;

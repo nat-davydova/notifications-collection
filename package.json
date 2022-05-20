@@ -1,8 +1,8 @@
 {
   "name": "notifications-collection-4-examples-",
-  "version": "2022.05.20-17.03.33",
-  "license": "UNLICENSED",
-  "homepage": "https://codepen.io/nat-davydova/pen/7b4f85de922fe144bdad68a715976e6a",
+  "version": "2022.05.20-17.18.39",
+  "license": "MIT",
+  "homepage": "https://codepen.io/nat-davydova/pen/QWQvJjB",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",

@@ -74,6 +74,7 @@ body a {
   margin-bottom: 0;
 }
 
+/******* COMMON NOTIFICATION STYLES *******/
 .notification {
   display: flex;
   max-width: 700px;
@@ -125,6 +126,7 @@ body a {
   text-decoration: underline;
 }
 
+/******* NOTIFICATIONS #1 *******/
 .notification1 {
   gap: 20px;
 }
@@ -146,25 +148,34 @@ body a {
 .notification1--success:before {
   background-image: url("https://assets.codepen.io/3341051/check.svg");
 }
+.notification1--success a {
+  color: #006600;
+}
 
 .notification1--warning:before {
   background-image: url("https://assets.codepen.io/3341051/warning.svg");
+}
+.notification1--warning a {
+  color: #d26a0f;
 }
 
 .notification1--danger:before {
   background-image: url("https://assets.codepen.io/3341051/danger.svg");
 }
+.notification1--danger a {
+  color: #bb0202;
+}
 
 .notification1__title--success {
-  color: #005200;
+  color: #006600;
 }
 
 .notification1__title--warning {
-  color: #d26a0f;
+  color: #ef7e1a;
 }
 
 .notification1__title--danger {
-  color: #8d0101;
+  color: #bb0202;
 }
 
 @media (min-width: 500px) {
@@ -172,14 +183,12 @@ body a {
     margin-right: 30px;
   }
 }
-.notification1__content a {
-  color: #75698c;
-}
 
 .notification1__close {
   background-image: url("https://assets.codepen.io/3341051/cancel.svg");
 }
 
+/******* NOTIFICATIONS #2 *******/
 .notification2 {
   flex-wrap: wrap;
   justify-content: center;
@@ -263,6 +272,7 @@ body a {
   }
 }
 
+/******* NOTIFICATIONS #3 *******/
 .notification3 {
   flex-wrap: wrap;
   justify-content: center;
@@ -351,6 +361,7 @@ body a {
   background-image: url("https://assets.codepen.io/3341051/cancel2.svg");
 }
 
+/******* NOTIFICATIONS #4 *******/
 .notification4 {
   position: relative;
   padding: 0 20px 0 0;
