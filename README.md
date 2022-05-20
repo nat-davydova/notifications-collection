@@ -4,7 +4,7 @@
 
 A nice collection of 4 HTML/CSS Notification component styles
 
-<img src="https://eisenpar.com/work-imgs/notifications.png" width="650" />
+<img src="https://eisenpar.com/work-imgs/notifications1.png" width="650" />
 
 ## Usage
 
