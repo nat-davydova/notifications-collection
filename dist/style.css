@@ -78,6 +78,14 @@ body a {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
+.notification:before {
+  display: inline-flex;
+  flex-shrink: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
 
 .notification--elevation {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
@@ -96,6 +104,7 @@ body a {
 
 .notification__title {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .notification__content p {
@@ -122,6 +131,7 @@ body a {
   height: 30px;
   flex-shrink: 0;
   content: "";
+  background-size: contain;
 }
 @media (min-width: 500px) {
   .notification1:before {
@@ -131,25 +141,21 @@ body a {
 }
 
 .notification1--success:before {
-  background: url("https://assets.codepen.io/3341051/check.svg") 0 0 no-repeat;
+  background-image: url("https://assets.codepen.io/3341051/check.svg");
 }
 
 .notification1--warning:before {
-  background: url("https://assets.codepen.io/3341051/warning.svg") 0 0 no-repeat;
+  background-image: url("https://assets.codepen.io/3341051/warning.svg");
 }
 
 .notification1--danger:before {
-  background: url("https://assets.codepen.io/3341051/danger.svg") 0 0 no-repeat;
+  background-image: url("https://assets.codepen.io/3341051/danger.svg");
 }
 
 @media (min-width: 500px) {
   .notification1__content {
     margin-right: 30px;
   }
-}
-
-.notification1__title {
-  margin-bottom: 10px;
 }
 
 .notification1__title--success {
@@ -183,9 +189,26 @@ body a {
   border-radius: 5px;
   border: 2px solid;
 }
+.notification2:before {
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  background-size: 70%;
+  background-position: 50%;
+  border-radius: 50%;
+  border: 10px solid;
+}
 
 .notification2--success {
   background-color: #d6ffd6;
+  border-color: #008e00;
+}
+.notification2--success:before {
+  background-size: 75%;
+  background-image: url(https://assets.codepen.io/3341051/check2.svg);
   border-color: #008e00;
 }
 
@@ -193,8 +216,17 @@ body a {
   background-color: #fcdfc5;
   border-color: #f18c33;
 }
+.notification2--warning:before {
+  background-image: url(https://assets.codepen.io/3341051/warning2.svg);
+  border-color: #f18c33;
+}
 
 .notification2--danger {
   background-color: #ffd6d6;
+  border-color: #fd0d0d;
+}
+.notification2--danger:before {
+  background-size: 55%;
+  background-image: url(https://assets.codepen.io/3341051/danger2.svg);
   border-color: #fd0d0d;
 }

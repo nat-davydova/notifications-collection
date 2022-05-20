@@ -152,8 +152,16 @@ $_mobile-width: 500px;
 // COMMON NOTIFICATION STYLES
 .notification {
   font-family: "Open Sans", sans-serif;
-
   box-sizing: border-box;
+
+  &:before {
+    display: inline-flex;
+    flex-shrink: 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
 }
 
 .notification--elevation {
@@ -174,6 +182,7 @@ $_mobile-width: 500px;
 
 .notification__title {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .notification__content {
@@ -206,6 +215,7 @@ $_mobile-width: 500px;
     height: 30px;
     flex-shrink: 0;
     content: "";
+    background-size: contain;
 
     @media (min-width: $_mobile-width) {
       width: 40px;
@@ -216,21 +226,19 @@ $_mobile-width: 500px;
 
 .notification1--success {
   &:before {
-    background: url("https://assets.codepen.io/3341051/check.svg") 0 0 no-repeat;
+    background-image: url("https://assets.codepen.io/3341051/check.svg");
   }
 }
 
 .notification1--warning {
   &:before {
-    background: url("https://assets.codepen.io/3341051/warning.svg") 0 0
-      no-repeat;
+    background-image: url("https://assets.codepen.io/3341051/warning.svg");
   }
 }
 
 .notification1--danger {
   &:before {
-    background: url("https://assets.codepen.io/3341051/danger.svg") 0 0
-      no-repeat;
+    background-image: url("https://assets.codepen.io/3341051/danger.svg");
   }
 }
 
@@ -238,10 +246,6 @@ $_mobile-width: 500px;
   @media (min-width: $_mobile-width) {
     margin-right: 30px;
   }
-}
-
-.notification1__title {
-  margin-bottom: 10px;
 }
 
 .notification1__title--success {
@@ -278,19 +282,49 @@ $_mobile-width: 500px;
   padding: 20px;
   border-radius: 5px;
   border: 2px solid;
+
+  &:before {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    background-size: 70%;
+    background-position: 50%;
+    border-radius: 50%;
+    border: 10px solid;
+  }
 }
 
 .notification2--success {
   background-color: $_green_10;
   border-color: $_green_50;
+
+  &:before {
+    background-size: 75%;
+    background-image: url(https://assets.codepen.io/3341051/check2.svg);
+    border-color: $_green_50;
+  }
 }
 
 .notification2--warning {
   background-color: $_orange_10;
   border-color: $_orange_50;
+
+  &:before {
+    background-image: url(https://assets.codepen.io/3341051/warning2.svg);
+    border-color: $_orange_50;
+  }
 }
 
 .notification2--danger {
   background-color: $_red_10;
   border-color: $_red_50;
+
+  &:before {
+    background-size: 55%;
+    background-image: url(https://assets.codepen.io/3341051/danger2.svg);
+    border-color: $_red_50;
+  }
 }
